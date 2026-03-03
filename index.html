@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东方希望综合办公平台 - 登录</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <span>东方希望</span>
+            <span class="logo-subtitle">综合办公平台</span>
+        </div>
+        <div class="social-buttons">
+            <button class="social-btn wechat" type="button" title="分享到微信" aria-label="分享到微信"><span>分享到微信</span></button>
+            <button class="social-btn qq" type="button" title="分享到QQ" aria-label="分享到QQ"><span>分享到QQ</span></button>
+        </div>
+    </header>
+    <main>
+        <div class="left-section">
+            <div class="illustration">
+                <div class="cube main-cube"></div>
+                <div class="cube cube-2"></div>
+                <div class="cube cube-3"></div>
+                <div class="cube cube-4"></div>
+                <div class="red-line"></div>
+                <div class="red-line line-2"></div>
+                <div class="red-line line-3"></div>
+                <div class="red-block"></div>
+                <div class="red-stripe"></div>
+                <div class="red-stripe stripe-2"></div>
+                <div class="red-stripe stripe-3"></div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="login-card">
+                <div class="login-header">
+                    <h3>登录</h3>
+                    <div class="login-tabs">
+                        <button class="tab-btn active" data-tab="face" type="button">人脸识别</button>
+                        <button class="tab-btn" data-tab="password" type="button">账号密码</button>
+                    </div>
+                </div>
+                
+                <div class="login-content">
+                    <!-- 人脸识别登录 -->
+                    <div class="tab-panel active" id="face-tab">
+                        <div class="qr-code">
+                            <div class="qr-pattern"></div>
+                            <div class="qr-logo"></div>
+                        </div>
+                        <p class="login-hint">请使用人脸识别登录</p>
+                    </div>
+                    
+                    <!-- 账号密码登录 -->
+                    <div class="tab-panel" id="password-tab">
+                        <form class="login-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="请输入账号" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="请输入密码" required>
+                            </div>
+                            <button type="submit" class="login-btn">登录</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="login-footer">
+                    <a href="#">忘记密码？</a>
+                    <a href="#">立即注册</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 东方希望. 保留所有权利.</p>
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">帮助中心</a>
+                <a href="#">隐私政策</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
